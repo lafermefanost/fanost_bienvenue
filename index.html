@@ -70,23 +70,11 @@
       opacity: 0.75;
       margin-bottom: 14px;
     }
-    /* ✅ BUG 1 CORRIGÉ — h1 rempli avec le nom */
-    .header h1 {
-      font-family: var(--font-display);
-      font-weight: 300;
-      font-size: 44px;
-      line-height: 1.05;
-      letter-spacing: 0.02em;
-      margin-bottom: 4px;
-      color: #fff;
-    }
-    .header h1 em {
-      font-style: italic;
-      font-weight: 300;
+    .header-logo-img {
+      width: min(280px, 65vw);
+      height: auto;
       display: block;
-      font-size: 28px;
-      color: #fff;
-      opacity: 0.85;
+      margin: 0 auto 4px;
     }
     .header-sub {
       font-family: var(--font-display);
@@ -357,8 +345,7 @@
   <!-- ═══ EN-TÊTE ══════════════════════════════════ -->
   <header class="header">
     <p class="header-eyebrow">Morangis · Essonne</p>
-    <!-- ✅ BUG 1 CORRIGÉ — h1 désormais rempli -->
-    <h1>La Ferme Fanost</h1>
+    <img src="images/1774740617407_logolaferme-02.jpg" alt="La Ferme Fanost" class="header-logo-img" />
     <p class="header-sub">Chambres d'hôtes & Table d'hôtes</p>
     <div class="ornament"><span class="ornament-leaf">✦</span></div>
   </header>
@@ -856,15 +843,7 @@
       </div>
     </section>
 
-  
-
-
-
-
-
-
-
-</div><!-- /content -->
+  </div><!-- /content -->
 
   <footer class="footer">
     <div class="footer-divider">
