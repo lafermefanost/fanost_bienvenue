@@ -30,7 +30,7 @@
       color: var(--dark);
       font-family: var(--font-body);
       font-weight: 300;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.65;
       min-height: 100vh;
     }
@@ -63,7 +63,7 @@
     .header-eyebrow {
       font-family: var(--font-body);
       font-weight: 400;
-      font-size: 11px;
+      font-size: 12px;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       color: #fff;
@@ -79,7 +79,7 @@
     .header-sub {
       font-family: var(--font-display);
       font-style: italic;
-      font-size: 20px;
+      font-size: 21px;
       color: #fff;
       margin-top: 12px;
       opacity: 0.85;
@@ -98,7 +98,7 @@
       background: #fff;
       opacity: 0.35;
     }
-    .ornament-leaf { font-size: 16px; color: #fff; opacity: 0.35; }
+    .ornament-leaf { font-size: 17px; color: #fff; opacity: 0.35; }
 
     /* ─── Bandeau info ─── */
     .info-band {
@@ -106,7 +106,7 @@
       color: var(--cream);
       text-align: center;
       padding: 12px 20px;
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: 0.08em;
       display: flex;
       align-items: center;
@@ -126,7 +126,7 @@
     .section-title h2 {
       font-family: var(--font-display);
       font-weight: 600;
-      font-size: 24px;
+      font-size: 26px;
       letter-spacing: 0.04em;
       color: var(--dark);
       display: inline-block;
@@ -134,7 +134,7 @@
     .section-title .section-label {
       display: block;
       font-family: var(--font-body);
-      font-size: 11px;
+      font-size: 12px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--earth);
@@ -157,15 +157,19 @@
     }
     .formula-box .price-badge {
       display: inline-block;
-      background: var(--dark);
+      background: #5C6E4A;
       color: #F7F2EA;
       font-family: var(--font-display);
-      font-size: 26px;
+      font-size: 28px;
       padding: 4px 18px;
       margin-bottom: 10px;
+      transition: background 0.2s;
+    }
+    .formula-box .price-badge:hover {
+      background: #3d4c31;
     }
     .formula-box .formula-desc {
-      font-size: 14.5px;
+      font-size: 16px;
       color: var(--earth);
       font-style: italic;
       font-family: var(--font-display);
@@ -183,16 +187,16 @@
     .dish-left { flex: 1; }
     .dish-name {
       font-family: var(--font-display);
-      font-size: 17px;
+      font-size: 18px;
       font-weight: 400;
       color: var(--dark);
       line-height: 1.2;
     }
     .dish-name em { font-style: italic; font-weight: 300; }
-    .dish-desc { font-size: 12px; color: var(--earth); margin-top: 3px; line-height: 1.5; }
+    .dish-desc { font-size: 13px; color: var(--earth); margin-top: 3px; line-height: 1.5; }
     .dish-tag {
       display: inline-block;
-      font-size: 10.5px;
+      font-size: 11px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--olive);
@@ -204,7 +208,7 @@
     }
     .dish-price {
       font-family: var(--font-display);
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 400;
       color: var(--accent);
       white-space: nowrap;
@@ -213,7 +217,7 @@
 
     .sub-category {
       font-family: var(--font-body);
-      font-size: 11px;
+      font-size: 12px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--earth);
@@ -227,7 +231,7 @@
       border-left: 3px solid var(--sand);
       padding: 14px 16px;
       margin-top: 24px;
-      font-size: 14.5px;
+      font-size: 16px;
       line-height: 1.7;
       color: var(--earth);
       font-style: italic;
@@ -236,7 +240,7 @@
 
     .allergens {
       text-align: center;
-      font-size: 12px;
+      font-size: 13px;
       color: var(--sand);
       margin-top: 32px;
       padding: 0 8px;
@@ -256,74 +260,128 @@
       height: 1px;
       background: var(--rule);
     }
-    .footer-divider-icon { font-size: 18px; opacity: 0.4; }
+    .footer-divider-icon { font-size: 19px; opacity: 0.4; }
     .footer-name {
       font-family: var(--font-display);
-      font-size: 20px;
+      font-size: 21px;
       font-weight: 300;
       letter-spacing: 0.1em;
       color: var(--earth);
       margin-bottom: 6px;
     }
-    .footer-address { font-size: 12px; color: var(--sand); letter-spacing: 0.05em; line-height: 1.8; }
+    .footer-address { font-size: 13px; color: var(--sand); letter-spacing: 0.05em; line-height: 1.8; }
 
-    /* ─── Cartes restaurant ─── */
+    /* ─── Cartes restaurant (style fiche Google Maps) ─── */
     .resto-card {
-      background: var(--warm);
-      border: 1px solid var(--sand);
-      border-radius: 2px;
-      padding: 16px 18px;
-      margin-bottom: 12px;
-      transition: border-color 0.2s;
+      background: #fff;
+      border: 1px solid #e0d8cc;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      transition: box-shadow 0.2s, transform 0.2s;
     }
-    .resto-card:hover { border-color: var(--earth); }
-    .resto-header {
+    .resto-card:hover {
+      box-shadow: 0 4px 14px rgba(0,0,0,0.13);
+      transform: translateY(-1px);
+    }
+    .resto-card-header {
+      background: #5C6E4A;
+      padding: 12px 16px 10px;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 10px;
-      margin-bottom: 8px;
     }
     .resto-name {
       font-family: var(--font-display);
-      font-size: 18px;
+      font-size: 19px;
       font-weight: 400;
-      color: var(--dark);
+      color: #fff;
       line-height: 1.2;
     }
     .resto-type {
-      font-size: 11px;
-      color: var(--earth);
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
       margin-top: 3px;
       letter-spacing: 0.03em;
     }
+    .resto-badge {
+      background: rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 4px 10px;
+      text-align: center;
+      flex-shrink: 0;
+    }
     .resto-rating {
       font-family: var(--font-display);
-      font-size: 15px;
-      color: var(--accent);
-      white-space: nowrap;
-      flex-shrink: 0;
+      font-size: 17px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1;
+    }
+    .resto-stars {
+      font-size: 11px;
+      color: #FFD700;
+      letter-spacing: 1px;
     }
     .resto-count {
       font-size: 11px;
-      color: var(--earth);
+      color: rgba(255,255,255,0.7);
       font-family: var(--font-body);
     }
+    .resto-body {
+      padding: 14px 16px;
+    }
     .resto-desc {
-      font-size: 14.5px;
+      font-size: 16px;
       color: var(--earth);
       line-height: 1.6;
       font-style: italic;
       font-family: var(--font-display);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .resto-meta {
       display: flex;
       flex-direction: column;
-      gap: 3px;
-      font-size: 11.5px;
-      color: var(--earth);
-      letter-spacing: 0.02em;
+      gap: 5px;
+      font-size: 13px;
+      color: #555;
+      letter-spacing: 0.01em;
+      margin-bottom: 14px;
+    }
+    .resto-meta span { display: flex; align-items: center; gap: 6px; }
+    .resto-cta {
+      display: inline-block;
+      background: #5C6E4A;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.2s;
+    }
+    .resto-cta:hover { background: #3d4c31; }
+
+    /* ─── Bouton action vert ─── */
+    .btn-action {
+      display: inline-block;
+      background: #5C6E4A;
+      color: var(--cream);
+      font-family: var(--font-body);
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 16px 32px;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .btn-action:hover {
+      background: #3d4c31;
     }
 
     @media (prefers-reduced-motion: no-preference) {
@@ -350,17 +408,16 @@
     <div class="ornament"><span class="ornament-leaf">✦</span></div>
   </header>
 
-
   <nav style="position:sticky;top:0;z-index:100;background:#5E6E52;display:flex;overflow-x:auto;scrollbar-width:none">
-    <a href="#acces" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🔑 Accès</a>
-    <a href="#wifi" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">📶 WiFi</a>
-    <a href="#dejeuner" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🥐 Petit-déj</a>
-    <a href="#diner" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🍽 Dîner</a>
-    <a href="#boissons" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🍷 Boissons</a>
-    <a href="#resto" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🗺 Sortir</a>
-    <a href="#chambre" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">💳 Chambre</a>
-    <a href="#contact" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">💬 Contact</a>
-    <a href="#avis" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">⭐ Avis</a>
+    <a href="#acces" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🔑 Accès</a>
+    <a href="#wifi" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">📶 WiFi</a>
+    <a href="#dejeuner" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🥐 Petit-déj</a>
+    <a href="#diner" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🍽 Dîner</a>
+    <a href="#boissons" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🍷 Boissons</a>
+    <a href="#resto" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">🗺 Sortir</a>
+    <a href="#chambre" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">💳 Chambre</a>
+    <a href="#contact" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">💬 Contact</a>
+    <a href="#avis" style="flex-shrink:0;padding:11px 13px;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:rgba(247,242,234,.6);text-decoration:none;white-space:nowrap">⭐ Avis</a>
   </nav>
 
   <div class="content">
@@ -376,17 +433,17 @@
 
       <div style="display:flex;flex-direction:column;gap:10px;">
         <div style="background:var(--warm);border:1px solid var(--sand);border-radius:2px;padding:18px 20px;display:flex;align-items:center;gap:16px;">
-          <span style="font-size:28px;">🔑</span>
+          <span style="font-size:30px;">🔑</span>
           <div>
-            <p style="font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--earth);margin-bottom:4px;">Code portillon</p>
-            <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:32px;font-weight:400;color:var(--dark);letter-spacing:.18em;">0512</p>
+            <p style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--earth);margin-bottom:4px;">Code portillon</p>
+            <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;font-weight:400;color:var(--dark);letter-spacing:.18em;">0512</p>
           </div>
         </div>
         <div style="background:var(--warm);border:1px solid var(--sand);border-radius:2px;padding:18px 20px;display:flex;align-items:center;gap:16px;">
-          <span style="font-size:28px;">🔵</span>
+          <span style="font-size:30px;">🔵</span>
           <div>
-            <p style="font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--earth);margin-bottom:4px;">Pour sortir</p>
-            <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:17px;color:var(--dark);">Appuyez sur le petit bouton bleu à côté du portillon</p>
+            <p style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--earth);margin-bottom:4px;">Pour sortir</p>
+            <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;color:var(--dark);">Appuyez sur le petit bouton bleu à côté du portillon</p>
           </div>
         </div>
       </div>
@@ -404,15 +461,15 @@
         <div id="wifi-qr" style="display:inline-block;"></div>
 
         <div style="margin-top:22px; border-top:1px solid var(--rule); padding-top:18px;">
-          <p style="font-family:var(--font-body); font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--earth); margin-bottom:12px;">Ou connectez-vous manuellement</p>
+          <p style="font-family:var(--font-body); font-size:12px; letter-spacing:0.18em; text-transform:uppercase; color:var(--earth); margin-bottom:12px;">Ou connectez-vous manuellement</p>
           <div style="display:flex; flex-direction:column; gap:10px;">
             <div style="background:var(--cream); padding:10px 16px; border-radius:2px;">
-              <p style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--earth); margin-bottom:3px;">Réseau</p>
-              <p style="font-family:var(--font-display); font-size:17px; color:var(--dark); letter-spacing:0.02em;">LaFermeFanostInvite</p>
+              <p style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--earth); margin-bottom:3px;">Réseau</p>
+              <p style="font-family:var(--font-display); font-size:18px; color:var(--dark); letter-spacing:0.02em;">LaFermeFanostInvite</p>
             </div>
             <div style="background:var(--cream); padding:10px 16px; border-radius:2px;">
-              <p style="font-size:11px; letter-spacing:0.12em; text-transform:uppercase; color:var(--earth); margin-bottom:3px;">Mot de passe</p>
-              <p style="font-family:var(--font-display); font-size:17px; color:var(--dark); letter-spacing:0.02em;">@4rueCharlesFanost</p>
+              <p style="font-size:12px; letter-spacing:0.12em; text-transform:uppercase; color:var(--earth); margin-bottom:3px;">Mot de passe</p>
+              <p style="font-family:var(--font-display); font-size:18px; color:var(--dark); letter-spacing:0.02em;">@4rueCharlesFanost</p>
             </div>
           </div>
         </div>
@@ -534,12 +591,12 @@
         <hr class="section-rule" />
       </div>
 
-      <p style="text-align:center;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#7A6248;opacity:.85;margin-bottom:22px;">
+      <p style="text-align:center;font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#7A6248;opacity:.85;margin-bottom:22px;">
         🕖 Accueil à table dès 19h30 &nbsp;·&nbsp; Lun → Jeu &nbsp;·&nbsp; Réservation la veille
       </p>
       <div class="formula-box">
         <div class="price-badge">25 € / personne</div>
-        <p style="font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.1em;color:var(--earth);margin-bottom:8px;">+ 5 € pour les non-résidents</p>
+        <p style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.1em;color:var(--earth);margin-bottom:8px;">+ 5 € pour les non-résidents</p>
         <p class="formula-desc">Menu 3 services · Boissons à la carte · Café & infusion offerts</p>
       </div>
 
@@ -695,73 +752,97 @@
         Quelques adresses testées et approuvées dans un rayon de 10 minutes. Pensez à réserver, les bonnes tables se remplissent vite !
       </div>
 
-      <a href="https://maps.google.com/?q=Osteria+Pietrinella+8+Rue+de+l+Eglise+Antony" target="_blank" style="text-decoration:none; display:block;">
-        <div class="resto-card">
-          <div class="resto-header">
-            <div>
-              <div class="resto-name">Osteria Pietrinella</div>
-              <div class="resto-type">🍝 Italien · Antony</div>
-            </div>
-            <div class="resto-rating">⭐ 4,8 <span class="resto-count">(693)</span></div>
+      <!-- Osteria Pietrinella -->
+      <div class="resto-card">
+        <div class="resto-card-header">
+          <div>
+            <div class="resto-name">Osteria Pietrinella</div>
+            <div class="resto-type">🍝 Italien · Antony</div>
           </div>
+          <div class="resto-badge">
+            <div class="resto-rating">4,8</div>
+            <div class="resto-stars">★★★★★</div>
+            <div class="resto-count">693 avis</div>
+          </div>
+        </div>
+        <div class="resto-body">
           <div class="resto-desc">Cuisine calabraise authentique dans un cadre de village. Les tagliatelles au ragù sont remarquables. Réservation indispensable.</div>
           <div class="resto-meta">
             <span>📍 8 rue de l'Église, Antony · ~8 min</span>
             <span>🕐 Mar–Ven midi · soir Mar–Ven</span>
           </div>
+          <a href="https://maps.google.com/?q=Osteria+Pietrinella+8+Rue+de+l+Eglise+Antony" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
-      </a>
+      </div>
 
-      <a href="https://maps.google.com/?q=Les+Galopins+56+Avenue+Division+Leclerc+Antony" target="_blank" style="text-decoration:none; display:block;">
-        <div class="resto-card">
-          <div class="resto-header">
-            <div>
-              <div class="resto-name">Les Galopins</div>
-              <div class="resto-type">🥩 Brasserie française · Antony</div>
-            </div>
-            <div class="resto-rating">⭐ 4,6 <span class="resto-count">(1 308)</span></div>
+      <!-- Les Galopins -->
+      <div class="resto-card">
+        <div class="resto-card-header">
+          <div>
+            <div class="resto-name">Les Galopins</div>
+            <div class="resto-type">🥩 Brasserie française · Antony</div>
           </div>
+          <div class="resto-badge">
+            <div class="resto-rating">4,6</div>
+            <div class="resto-stars">★★★★★</div>
+            <div class="resto-count">1 308 avis</div>
+          </div>
+        </div>
+        <div class="resto-body">
           <div class="resto-desc">Grande brasserie conviviale réputée pour ses viandes et burgers Angus. Service attentionné, salle animée. Ouvert 7j/7.</div>
           <div class="resto-meta">
             <span>📍 56 av. Division Leclerc, Antony · ~8 min</span>
             <span>🕐 Tous les jours midi & soir</span>
           </div>
+          <a href="https://maps.google.com/?q=Les+Galopins+56+Avenue+Division+Leclerc+Antony" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
-      </a>
+      </div>
 
-      <a href="https://maps.google.com/?q=La+Grange+aux+Dimes+3+Rue+Andre+Dolimier+Wissous" target="_blank" style="text-decoration:none; display:block;">
-        <div class="resto-card">
-          <div class="resto-header">
-            <div>
-              <div class="resto-name">La Grange aux Dîmes</div>
-              <div class="resto-type">🇫🇷 Gastronomique · Wissous</div>
-            </div>
-            <div class="resto-rating">⭐ 4,4 <span class="resto-count">(692)</span></div>
+      <!-- La Grange aux Dîmes -->
+      <div class="resto-card">
+        <div class="resto-card-header">
+          <div>
+            <div class="resto-name">La Grange aux Dîmes</div>
+            <div class="resto-type">🇫🇷 Gastronomique · Wissous</div>
           </div>
+          <div class="resto-badge">
+            <div class="resto-rating">4,4</div>
+            <div class="resto-stars">★★★★☆</div>
+            <div class="resto-count">692 avis</div>
+          </div>
+        </div>
+        <div class="resto-body">
           <div class="resto-desc">Cadre exceptionnel dans une bâtisse du XIII<sup>e</sup> siècle. Cuisine française soignée, cave à vins remarquable. Idéal pour un repas d'affaires.</div>
           <div class="resto-meta">
             <span>📍 3 rue André Dolimier, Wissous · ~5 min</span>
             <span>🕐 Mar–Sam midi & soir</span>
           </div>
+          <a href="https://maps.google.com/?q=La+Grange+aux+Dimes+3+Rue+Andre+Dolimier+Wissous" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
-      </a>
+      </div>
 
-      <a href="https://maps.google.com/?q=Chez+Maria+17+Voie+du+Bon+Puits+Wissous" target="_blank" style="text-decoration:none; display:block;">
-        <div class="resto-card">
-          <div class="resto-header">
-            <div>
-              <div class="resto-name">Chez Maria</div>
-              <div class="resto-type">🇵🇹 Portugais · Wissous</div>
-            </div>
-            <div class="resto-rating">⭐ 4,8 <span class="resto-count">(97)</span></div>
+      <!-- Chez Maria -->
+      <div class="resto-card">
+        <div class="resto-card-header">
+          <div>
+            <div class="resto-name">Chez Maria</div>
+            <div class="resto-type">🇵🇹 Portugais · Wissous</div>
           </div>
+          <div class="resto-badge">
+            <div class="resto-rating">4,8</div>
+            <div class="resto-stars">★★★★★</div>
+            <div class="resto-count">97 avis</div>
+          </div>
+        </div>
+        <div class="resto-body">
           <div class="resto-desc">Une pépite discrète à deux pas. Cuisine maison généreuse, accueil chaleureux et portions copieuses. Le vrai Portugal dans l'assiette.</div>
           <div class="resto-meta">
             <span>📍 17 voie du Bon Puits, Wissous · ~5 min</span>
             <span>🕐 Mar–Dim midi · Ven–Sam soir</span>
           </div>
+          <a href="https://maps.google.com/?q=Chez+Maria+17+Voie+du+Bon+Puits+Wissous" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
-      </a>
+      </div>
 
     </section>
     <span id="chambre"></span>
@@ -780,13 +861,10 @@
       <div style="text-align:center; margin-top:28px;">
         <a href="https://pay.sumup.com/b2c/Q1WIA7R5"
            target="_blank"
-           style="display:inline-block; background:var(--dark); color:var(--cream);
-                  font-family:var(--font-body); font-size:13px; letter-spacing:0.12em;
-                  text-transform:uppercase; text-decoration:none; padding:16px 32px;
-                  border-radius:2px;">
+           class="btn-action">
           💳 &nbsp;Payer ma chambre
         </a>
-        <p style="font-size:13px; color:var(--earth); margin-top:14px; font-family:var(--font-body); letter-spacing:0.04em;">
+        <p style="font-size:14px; color:var(--earth); margin-top:14px; font-family:var(--font-body); letter-spacing:0.04em;">
           🔒 Paiement sécurisé · CB, Apple Pay, Google Pay
         </p>
       </div>
@@ -808,7 +886,7 @@
         <a href="https://wa.me/33620312119"
            target="_blank"
            style="display:inline-block; background:#25D366; color:#fff;
-                  font-family:var(--font-body); font-size:13px; letter-spacing:0.12em;
+                  font-family:var(--font-body); font-size:14px; letter-spacing:0.12em;
                   text-transform:uppercase; text-decoration:none; padding:16px 32px;
                   border-radius:2px;">
           💬 &nbsp;Écrire sur WhatsApp
@@ -832,13 +910,13 @@
         <a href="https://search.google.com/local/writereview?placeid=ChIJ11XPNBh25kcRLkuZLRrDpNA"
            target="_blank"
            style="display:inline-block; background:#4285F4; color:#fff;
-                  font-family:var(--font-body); font-size:13px; letter-spacing:0.12em;
+                  font-family:var(--font-body); font-size:14px; letter-spacing:0.12em;
                   text-transform:uppercase; text-decoration:none; padding:16px 32px;
                   border-radius:2px;">
           ⭐ &nbsp;Donner mon avis sur Google
         </a>
-        <p style="font-size:15px; color:var(--earth); margin-top:14px; font-family:var(--font-display); letter-spacing:0.04em;">
-          ⭐ <strong style="font-size:17px; color:var(--dark);">4,9 / 5</strong> &nbsp;·&nbsp; 36 avis Google
+        <p style="font-size:16px; color:var(--earth); margin-top:14px; font-family:var(--font-display); letter-spacing:0.04em;">
+          ⭐ <strong style="font-size:18px; color:var(--dark);">4,9 / 5</strong> &nbsp;·&nbsp; 36 avis Google
         </p>
       </div>
     </section>
@@ -860,7 +938,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 <script>
-  /* ✅ BUG 2 CORRIGÉ — suppression du /> parasite + ajout de colorDark manquant */
   const SSID     = 'LaFermeFanostInvite';
   const PASSWORD = '@4rueCharlesFanost';
   const wifiString = 'WIFI:T:WPA;S:' + SSID + ';P:' + PASSWORD + ';;';
