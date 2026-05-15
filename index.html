@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css" />
 
   <style>
     :root {
@@ -107,7 +106,7 @@
       color: var(--cream);
       text-align: center;
       padding: 12px 20px;
-      font-size: 13px;
+      font-size: 14px;
       letter-spacing: 0.08em;
       display: flex;
       align-items: center;
@@ -135,7 +134,7 @@
     .section-title .section-label {
       display: block;
       font-family: var(--font-body);
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--earth);
@@ -194,10 +193,10 @@
       line-height: 1.2;
     }
     .dish-name em { font-style: italic; font-weight: 300; }
-    .dish-desc { font-size: 13px; color: var(--earth); margin-top: 3px; line-height: 1.5; }
+    .dish-desc { font-size: 15px; color: var(--earth); margin-top: 3px; line-height: 1.55; }
     .dish-tag {
       display: inline-block;
-      font-size: 11px;
+      font-size: 12px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--olive);
@@ -211,14 +210,14 @@
       font-family: var(--font-display);
       font-size: 17px;
       font-weight: 400;
-      color: var(--accent);
+      color: var(--earth);
       white-space: nowrap;
       flex-shrink: 0;
     }
 
     .sub-category {
       font-family: var(--font-body);
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--earth);
@@ -241,7 +240,7 @@
 
     .allergens {
       text-align: center;
-      font-size: 13px;
+      font-size: 15px;
       color: var(--sand);
       margin-top: 32px;
       padding: 0 8px;
@@ -270,7 +269,7 @@
       color: var(--earth);
       margin-bottom: 6px;
     }
-    .footer-address { font-size: 13px; color: var(--sand); letter-spacing: 0.05em; line-height: 1.8; }
+    .footer-address { font-size: 15px; color: var(--sand); letter-spacing: 0.05em; line-height: 1.8; }
 
     /* ─── Cartes restaurant (style fiche Google Maps) ─── */
     .resto-card {
@@ -322,12 +321,12 @@
       line-height: 1;
     }
     .resto-stars {
-      font-size: 11px;
+      font-size: 12px;
       color: #FFD700;
       letter-spacing: 1px;
     }
     .resto-count {
-      font-size: 11px;
+      font-size: 12px;
       color: rgba(255,255,255,0.7);
       font-family: var(--font-body);
     }
@@ -346,7 +345,7 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
-      font-size: 13px;
+      font-size: 15px;
       color: #555;
       letter-spacing: 0.01em;
       margin-bottom: 14px;
@@ -357,7 +356,7 @@
       background: #5C6E4A;
       color: #fff;
       font-family: var(--font-body);
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       text-decoration: none;
@@ -397,14 +396,15 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/thin/style.css" />
 </head>
 <body>
 <div class="page">
 
-  <!-- ═══ EN-TÊTE ════════════════════════════ -->
+  <!-- ═══ EN-TÊTE ══════════════════════════════════════════ -->
   <header class="header">
     <p class="header-eyebrow">Morangis · Essonne</p>
-    <img src="images/1774740617407_logolaferme-02.png" alt="La Ferme Fanost" class="header-logo-img" />
+    <img src="images/1774740617407_logolaferme-01.png" alt="La Ferme Fanost" class="header-logo-img" />
     <p class="header-sub">Chambres d'hôtes & Table d'hôtes</p>
     <div class="ornament"><span class="ornament-leaf">✦</span></div>
   </header>
@@ -423,7 +423,7 @@
 
   <div class="content">
     <span id="wifi"></span>
-    <!-- ═══ ACCÈS ═══════════════════════════════════ -->
+    <!-- ═══ ACCÈS ══════════════════════════════════════════ -->
     <span id="acces"></span>
     <section class="section">
       <div class="section-title">
@@ -434,14 +434,14 @@
 
       <div style="display:flex;flex-direction:column;gap:10px;">
         <div style="background:var(--warm);border:1px solid var(--sand);border-radius:2px;padding:18px 20px;display:flex;align-items:center;gap:16px;">
-          <span style="font-size:30px;">🔑</span>
+          <span style="font-size:30px;">&#128273;</span>
           <div>
             <p style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--earth);margin-bottom:4px;">Code portillon</p>
             <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:34px;font-weight:400;color:var(--dark);letter-spacing:.18em;">0512</p>
           </div>
         </div>
         <div style="background:var(--warm);border:1px solid var(--sand);border-radius:2px;padding:18px 20px;display:flex;align-items:center;gap:16px;">
-          <span style="font-size:30px;">🔵</span>
+          <span style="font-size:30px;">&#128309;</span>
           <div>
             <p style="font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--earth);margin-bottom:4px;">Pour sortir</p>
             <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:18px;color:var(--dark);">Appuyez sur le petit bouton bleu à côté du portillon</p>
@@ -450,7 +450,7 @@
       </div>
     </section>
 
-    <!-- ═══ WIFI ════════════════════════════════════════════════ -->
+    <!-- ═══ WIFI ══════════════════════════════════════════════ -->
     <section class="section">
       <div class="section-title">
         <span class="section-label">Connexion internet</span>
@@ -473,11 +473,14 @@
               <p style="font-family:var(--font-display); font-size:18px; color:var(--dark); letter-spacing:0.02em;">@4rueCharlesFanost</p>
             </div>
           </div>
+          <button onclick="copyWifiPassword(this)" style="margin-top:16px;width:100%;padding:12px 20px;background:var(--warm);border:1px solid var(--sand);border-radius:2px;font-family:var(--font-body);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--earth);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;transition:background 0.2s,color 0.2s;">
+            <i class="ph-thin ph-wifi-high" style="font-size:16px;"></i> Se connecter au WiFi
+          </button>
         </div>
       </div>
     </section>
     <span id="dejeuner"></span>
-    <!-- ═══ PETIT-DÉJEUNER ═══════════════════════ -->
+    <!-- ═══ PETIT-DÉJEUNER ════════════════════════════════════════ -->
     <section class="section">
       <div class="section-title">
         <span class="section-label">Le matin</span>
@@ -584,7 +587,7 @@
       </div>
     </section>
     <span id="diner"></span>
-    <!-- ═══ TABLE D'HÔTES ═════════════════════════════════════════ -->
+    <!-- ═══ TABLE D'HÔTES ════════════════════════════════════════════ -->
     <section class="section">
       <div class="section-title">
         <span class="section-label">Le soir</span>
@@ -593,7 +596,7 @@
       </div>
 
       <p style="text-align:center;font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#7A6248;opacity:.85;margin-bottom:22px;">
-        🕖 Accueil à table dès 19h30 &nbsp;·&nbsp; Lun → Jeu &nbsp;·&nbsp; Réservation la veille
+        &#128374; Accueil à table dès 19h30 &nbsp;·&nbsp; Lun → Jeu &nbsp;·&nbsp; Réservation la veille
       </p>
       <div class="formula-box">
         <div class="price-badge">25 € / personne</div>
@@ -612,7 +615,7 @@
       <div class="dish">
         <div class="dish-left">
           <div class="dish-name">Fruits & légumes <em>bio de saison</em></div>
-          <div class="dish-desc">Sélection locale et saisonnière · cuisine équilibrée et saine</div>
+          <div class="dish-desc">Sélection locale et saisonère · cuisine équilibrée et saine</div>
           <span class="dish-tag">bio · local</span>
         </div>
       </div>
@@ -636,7 +639,7 @@
       </div>
     </section>
     <span id="boissons"></span>
-    <!-- ═══ BOISSONS ═══════════════════════════════════════════════ -->
+    <!-- ═══ BOISSONS ══════════════════════════════════════════════════ -->
     <section class="section">
       <div class="section-title">
         <span class="section-label">À toute heure</span>
@@ -741,7 +744,7 @@
       </div>
     </section>
     <span id="resto"></span>
-    <!-- ═══ OÙ DÉJEUNER ? ════════════════════════════════════════════════════════════ -->
+    <!-- ═══ OÙ DÉJEUNER ? ═══════════════════════════════════════════════════════ -->
     <section class="section">
       <div class="section-title">
         <span class="section-label">Nos coups de cœur</span>
@@ -758,7 +761,7 @@
         <div class="resto-card-header">
           <div>
             <div class="resto-name">Osteria Pietrinella</div>
-            <div class="resto-type">🍝 Italien · Antony</div>
+            <div class="resto-type">&#127837; Italien · Antony</div>
           </div>
           <div class="resto-badge">
             <div class="resto-rating">4,8</div>
@@ -769,8 +772,8 @@
         <div class="resto-body">
           <div class="resto-desc">Cuisine calabraise authentique dans un cadre de village. Les tagliatelles au ragù sont remarquables. Réservation indispensable.</div>
           <div class="resto-meta">
-            <span>📍 8 rue de l'Église, Antony · ~8 min</span>
-            <span>🔐 Mar–Ven midi · soir Mar–Ven</span>
+            <span>&#128205; 8 rue de l'Église, Antony · ~8 min</span>
+            <span>&#128336; Mar–Ven midi · soir Mar–Ven</span>
           </div>
           <a href="https://maps.google.com/?q=Osteria+Pietrinella+8+Rue+de+l+Eglise+Antony" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
@@ -781,7 +784,7 @@
         <div class="resto-card-header">
           <div>
             <div class="resto-name">Les Galopins</div>
-            <div class="resto-type">🥩 Brasserie française · Antony</div>
+            <div class="resto-type">&#129385; Brasserie française · Antony</div>
           </div>
           <div class="resto-badge">
             <div class="resto-rating">4,6</div>
@@ -792,8 +795,8 @@
         <div class="resto-body">
           <div class="resto-desc">Grande brasserie conviviale réputée pour ses viandes et burgers Angus. Service attentionné, salle animée. Ouvert 7j/7.</div>
           <div class="resto-meta">
-            <span>📍 56 av. Division Leclerc, Antony · ~8 min</span>
-            <span>🔐 Tous les jours midi & soir</span>
+            <span>&#128205; 56 av. Division Leclerc, Antony · ~8 min</span>
+            <span>&#128336; Tous les jours midi & soir</span>
           </div>
           <a href="https://maps.google.com/?q=Les+Galopins+56+Avenue+Division+Leclerc+Antony" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
@@ -804,7 +807,7 @@
         <div class="resto-card-header">
           <div>
             <div class="resto-name">La Grange aux Dîmes</div>
-            <div class="resto-type">🇫🇷 Gastronomique · Wissous</div>
+            <div class="resto-type">&#127467;&#127479; Gastronomique · Wissous</div>
           </div>
           <div class="resto-badge">
             <div class="resto-rating">4,4</div>
@@ -815,8 +818,8 @@
         <div class="resto-body">
           <div class="resto-desc">Cadre exceptionnel dans une bâtisse du XIII<sup>e</sup> siècle. Cuisine française soignée, cave à vins remarquable. Idéal pour un repas d'affaires.</div>
           <div class="resto-meta">
-            <span>📍 3 rue André Dolimier, Wissous · ~5 min</span>
-            <span>🔐 Mar–Sam midi & soir</span>
+            <span>&#128205; 3 rue André Dolimier, Wissous · ~5 min</span>
+            <span>&#128336; Mar–Sam midi & soir</span>
           </div>
           <a href="https://maps.google.com/?q=La+Grange+aux+Dimes+3+Rue+Andre+Dolimier+Wissous" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
@@ -827,7 +830,7 @@
         <div class="resto-card-header">
           <div>
             <div class="resto-name">Chez Maria</div>
-            <div class="resto-type">🇵🇹 Portugais · Wissous</div>
+            <div class="resto-type">&#127477;&#127481; Portugais · Wissous</div>
           </div>
           <div class="resto-badge">
             <div class="resto-rating">4,8</div>
@@ -838,8 +841,8 @@
         <div class="resto-body">
           <div class="resto-desc">Une pépite discrète à deux pas. Cuisine maison généreuse, accueil chaleureux et portions copieuses. Le vrai Portugal dans l'assiette.</div>
           <div class="resto-meta">
-            <span>📍 17 voie du Bon Puits, Wissous · ~5 min</span>
-            <span>🔐 Mar–Dim midi · Ven–Sam soir</span>
+            <span>&#128205; 17 voie du Bon Puits, Wissous · ~5 min</span>
+            <span>&#128336; Mar–Dim midi · Ven–Sam soir</span>
           </div>
           <a href="https://maps.google.com/?q=Chez+Maria+17+Voie+du+Bon+Puits+Wissous" target="_blank" class="resto-cta">Voir sur Google Maps</a>
         </div>
@@ -847,7 +850,7 @@
 
     </section>
     <span id="chambre"></span>
-    <!-- ═══ RÈGLEMENT CHAMBRE ══════════════════════════════════════════════ -->
+    <!-- ═══ RÈGLEMENT CHAMBRE ════════════════════════════════════════════ -->
     <section class="section">
       <div class="section-title">
         <span class="section-label">Votre séjour</span>
@@ -863,10 +866,10 @@
         <a href="https://pay.sumup.com/b2c/Q1WIA7R5"
            target="_blank"
            class="btn-action">
-          💳 &nbsp;Payer ma chambre
+          &#128179; &nbsp;Payer ma chambre
         </a>
         <p style="font-size:14px; color:var(--earth); margin-top:14px; font-family:var(--font-body); letter-spacing:0.04em;">
-          🔒 Paiement sécurisé · CB, Apple Pay, Google Pay
+          &#128274; Paiement sécurisé · CB, Apple Pay, Google Pay
         </p>
       </div>
     </section>
@@ -890,12 +893,12 @@
                   font-family:var(--font-body); font-size:14px; letter-spacing:0.12em;
                   text-transform:uppercase; text-decoration:none; padding:16px 32px;
                   border-radius:2px;">
-          💬 &nbsp;Écrire sur WhatsApp
+          &#128172; &nbsp;Écrire sur WhatsApp
         </a>
       </div>
     </section>
     <span id="avis"></span>
-    <!-- ═══ AVIS GOOGLE ════════════════════════════════════════════════════════════ -->
+    <!-- ═══ AVIS GOOGLE ════════════════════════════════════════════════════ -->
     <section class="section">
       <div class="section-title">
         <span class="section-label">Votre retour compte</span>
@@ -904,7 +907,7 @@
       </div>
 
       <div class="note-box">
-        Votre séjour vous a plu ? Un petit avis sur Google nous aide énormément à faire connaître La Ferme Fanost et à accueillir de nouveaux voyageurs dans les meilleures conditions. Merci du fond du cœur 🙏
+        Votre séjour vous a plu ? Un petit avis sur Google nous aide énormément à faire connaître La Ferme Fanost et à accueillir de nouveaux voyageurs dans les meilleures conditions. Merci du fond du cœur &#128591;
       </div>
 
       <div style="text-align:center; margin-top:28px;">
@@ -914,10 +917,10 @@
                   font-family:var(--font-body); font-size:14px; letter-spacing:0.12em;
                   text-transform:uppercase; text-decoration:none; padding:16px 32px;
                   border-radius:2px;">
-          ⭐ &nbsp;Donner mon avis sur Google
+          &#11088; &nbsp;Donner mon avis sur Google
         </a>
         <p style="font-size:16px; color:var(--earth); margin-top:14px; font-family:var(--font-display); letter-spacing:0.04em;">
-          ⭐ <strong style="font-size:18px; color:var(--dark);">4,9 / 5</strong> &nbsp;·&nbsp; 36 avis Google
+          &#11088; <strong style="font-size:18px; color:var(--dark);">4,9 / 5</strong> &nbsp;·&nbsp; 36 avis Google
         </p>
       </div>
     </section>
@@ -951,6 +954,36 @@
     colorLight: '#EDE4D3',
     correctLevel: QRCode.CorrectLevel.M
   });
+
+  function copyWifiPassword(btn) {
+    // Tenter auto-connexion via lien wifi (Android) puis copier le mot de passe
+    var wifiLink = 'WIFI:T:WPA;S:' + SSID + ';P:' + PASSWORD + ';;';
+    var originalHTML = btn.innerHTML;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(PASSWORD).then(function() {
+        btn.innerHTML = '<i class="ph-thin ph-check" style="font-size:16px;"></i> Mot de passe copié !';
+        btn.style.background = '#5C6E4A';
+        btn.style.color = '#fff';
+        btn.style.borderColor = '#5C6E4A';
+        setTimeout(function() {
+          btn.innerHTML = originalHTML;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.style.borderColor = '';
+        }, 2500);
+      });
+    } else {
+      // Fallback: sélectionner le texte
+      var el = document.createElement('textarea');
+      el.value = PASSWORD;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+      btn.innerHTML = '<i class="ph-thin ph-check" style="font-size:16px;"></i> Copié !';
+      setTimeout(function() { btn.innerHTML = originalHTML; }, 2000);
+    }
+  }
 </script>
 
 </body>
